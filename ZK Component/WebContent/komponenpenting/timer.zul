@@ -1,0 +1,8 @@
+<?page title="Time" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Timer" border="normal">
+  <label id="lbl" />
+  <timer id="timer" delay="2500" repeats="true"
+      onTimer='lbl.setValue("Ini berubah dalam 2,5 detik.")'
+</window>
+</zk>

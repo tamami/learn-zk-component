@@ -1,0 +1,60 @@
+<?page title="Grid" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Grid" border="normal">
+  <grid>
+    <columns>
+      <column label="Parameter" />
+      <column label="Isi" />
+    </columns>
+    <rows>
+      <row>
+        <label value="Nama : " />
+        <textbox />
+      </row>
+      <row>
+        <label value="Alamat : " />
+        <textbox />
+      </row>
+    </rows>
+  </grid>
+</window>
+<window title="Grid 2" border="normal">
+  <grid>
+    <columns menupopup="auto">
+      <column label="Angka" sort="auto" />
+      <column label="Huruf" sort="auto" />
+    </columns>
+    <rows>
+      <row>
+        <label value="1" />
+        <label value="A" />
+      </row>
+      <row>
+        <label value="3" />
+        <label value="B" />
+      </row>
+      <row>
+        <label value="2" />
+        <label value="C" />
+      </row>
+    </rows>
+    <foot>
+      <footer>penutup 1</footer>
+      <footer>penutup 2</footer>
+    </foot>
+  </grid>
+</window>
+</zk>
+
+<!-- Tambahan materi : -->
+<!-- 1. model property with ListModelList -->
+<!-- 2. mold property with paging and pageSize property -->
+<!-- 3. paging component -->
+<!-- 4. autopaging property -->
+<!-- 5. sort property: sortAscending="${Comparator) -->
+<!-- 6. auxiliary headers -->
+<!-- 7. sizedByContent dan span property -->
+<!-- 8. emptyMessage property -->
+<!-- 9. sizable property -->
+<!-- 10. group component -->
+<!-- 11. frozen component -->

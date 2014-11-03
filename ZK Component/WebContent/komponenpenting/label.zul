@@ -1,0 +1,25 @@
+<?page title="Label" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Label" border="normal">
+<grid>
+  <rows>
+    <row>Contoh kata: 
+      <textbox id="teks" rows="2">
+        <attribute name="onChange">
+          lb1.value = self.value;
+          lb2.value = self.value;
+          lb3.value = self.value;
+          lb4.value = self.value;
+          lb5.value = self.value;
+        </attribute>
+      </textbox>
+    </row> 
+    <row>Normal : <label id="lb1" /></row>
+    <row>Berwarna : <label id="lb2" style="color:purple"/></row>
+    <row>Jenis Huruf: <label id="lb3" style="font-weight:bold" /></row>
+    <row>Ukuran: <label id="lb4" style="font-size:14pt" /></row>
+    <row>Pre: <label id="lb5" pre="true"/></row>
+  </rows>
+</grid>
+</window>
+</zk>

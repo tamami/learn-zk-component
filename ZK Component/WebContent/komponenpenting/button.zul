@@ -1,0 +1,23 @@
+<?page title="Button" contentType="text/html;charset=UTF-8"?>
+<zk>
+  <button label="Selanjutnya" image="/images/go.jpg" width="200px" />
+  <button label="Selanjutnya" image="/images/go.jpg" dir="reverse" width="200px" />
+  <button label="Selanjutnya" image="/images/go.jpg" orient="vertical" width="200px" />
+  <button label="Selanjutnya" image="/images/go.jpg" orient="vertical"
+      dir="reverse" width="200px" />
+</zk>
+
+<!-- Materi tambahan : -->
+<!-- 1. Gunakan Trendy mold sebagai default di zk.xml karena
+        keterbatasan nya saat menggunakan HTML BUTTON -->
+<!-- 2. gunakan autodisable="self" untuk mencegah pengguna menekan tombol berkali-kali,
+        terutama saat proses memakan waktu cukup lama, akan kembali aktif secara
+        otomatis apabila request selesai direspon.
+        Bisa pula meng-autodisable beberapa komponen sekaligus dengan memberikan
+        tanda koma seperti autodisable="self,cancel" -->
+<!-- 3. jika tetap ingin meng-enable secara manual (daripada langkah 2 yang otomatis
+        maka gunakan tanda + didepan komponen -->       
+<!-- 4. bisa pula diset otomatis agar seluruh tombol (button) mengaktifkan
+	    autodisable -->
+<!-- 5. bisa pula mengakses URL dengan href property, kalo mau buka jendela browser
+        baru, bisa gunakan property target --> 

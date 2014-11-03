@@ -1,0 +1,22 @@
+<?page title="Window" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window id="jendela" title="Jendela Percobaan" width="100px" closable="true">
+  <label value="Isi isinya" />
+</window>
+
+<vbox>
+  <button label="Overlap" onClick="jendela.doOverlapped();" />
+  <button label="Popup" onClick="jendela.doPopup();" />
+  <button label="Modal" onClick="jendela.doModal();" />
+  <button label="Embed" onClick="jendela.doEmbedded();" />
+  <button label="Highlighted" onClick="jendela.doHighlighted();" />	
+</vbox>
+</zk>
+
+<!-- Tambahan materi -->
+<!-- mode property: overlapped, popup, modal, highlighted, and embedded -->
+<!-- border property: normal / none -->
+<!-- closable property: true / false -->
+<!-- contentStyle property: background:yellow / overflow:auto -->
+<!-- position property: center, left, right, top, and bottom -->
+<!-- sizable property: true / false -->

@@ -1,0 +1,36 @@
+<?page title="File Upload" contentType="text/html;charset=UTF-8"?>
+<zk>
+<fileupload label="Unggah">
+  <attribute name="onUpload">
+    org.zkoss.util.media.Media media = event.getMedia();
+  </attribute>
+</fileupload>
+
+
+<!-- event thread disabled -->
+<div onUpload="processMedia(event.getMedias());">
+<zscript deffered="true"><![CDATA[
+  import org.zkoss.util.media.Media;
+  
+  public void processMedia(Media[] media) {
+	  if(media != null) {
+		  for(int i = 0; i < media.length; i++) {
+			  image.setContent(media[i]);
+		  } 
+	  } else {
+	      Messagebox.show("Not an image: " + media[i], "Error", 
+				Messagebox.OK, Messagebox.ERROR);
+		  break;
+	  }
+  }
+]]></zscript>
+<vbox>
+  <button label="Upload with thread disable" onClick="Fileupload.get(-1);" />
+  <image id="image" />
+</vbox>
+</div>
+
+</zk>
+
+<!-- materi tambahan : -->
+<!-- komponen fileupload sebetulnya adalah <button upload="true"> -->

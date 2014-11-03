@@ -1,0 +1,20 @@
+<?page title="Panel" contentType="text/html;charset=UTF-8"?>
+<zk>
+<panel>
+  <caption label="Ini Panel" />
+  <panelchildren>
+  	<label value="Ini isinya" />
+  </panelchildren>
+</panel>
+</zk>
+
+<!-- Tambahan materi -->
+<!-- 1. sizeable property (sizeable="true") -->
+<!-- 2. draggable property (draggable="false") -->
+<!-- 3. border property: -->
+<!--    a. border="none" -->
+<!--    b. border="normal" -->
+<!--    c. border="rounded" -->
+<!--    d. border="rounded+" -->
+<!-- 4. title property -->
+<!-- 5. closeable property (closeable="true") -->

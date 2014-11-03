@@ -1,0 +1,12 @@
+<?page title="Progress Meter" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Progress Meter" border="normal">
+<vbox>
+  <progressmeter value="10" />
+  <progressmeter value="25" />
+  <progressmeter value="50" />
+  <progressmeter value="84" />
+  <progressmeter value="100" />
+</vbox>
+</window>
+</zk>

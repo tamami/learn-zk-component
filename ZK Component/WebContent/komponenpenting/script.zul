@@ -1,0 +1,11 @@
+<?page title="Script" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window id="win" title="Script" border="normal">
+  <button label="Berubah" onClick='Clients.evalJavaScript("rubah_warna()")' />
+</window>
+<script type="text/javascript">
+  function rubah_warna() {
+    jq("$win").css("backgroundColor","blue");
+  }
+</script>
+</zk>

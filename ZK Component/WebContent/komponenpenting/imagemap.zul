@@ -1,0 +1,7 @@
+<?page title="ImageMa" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="ImageMap" border="normal">
+  <imagemap src="/images/button_checked.mdpi.png"
+      onClick="alert(event.x + &quot;, &quot; +event.y)" />
+</window>
+</zk>

@@ -1,0 +1,47 @@
+<?page title="Listbox" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Listbox" border="normal">
+  <listbox id="Data 1">
+    <listhead sizable="true" id="h" menupopup="auto">
+      <listheader id="lh1" label="nama" sort="auto" />
+      <listheader id="lh2" label="jumlah" sort="auto" />
+    </listhead>    
+    <listgroup id="lg1" open="false">
+      <listcell label="Buah" />
+      <listcell label="Jumlah" />
+    </listgroup>
+    <listitem>
+      <listcell label="Apel" />
+      <listcell label="3" />
+    </listitem>
+    <listitem>
+      <listcell label="Mangga" />
+      <listcell label="3"/>
+    </listitem>
+    <listgroupfoot>
+      <listcell label="Jumlah" />
+      <listcell label="6" />
+    </listgroupfoot>
+    <listgroup id="lg2" open="true">
+      <listcell label="Hewan" />
+      <listcell label="Jumlah" />
+    </listgroup>
+    <listitem>
+      <listcell label="Jerapah" />
+      <listcell label="2" />
+    </listitem>
+    <listitem>
+      <listcell label="Gajah" />
+      <listcell label="3" />
+    </listitem>
+    <listgroupfoot>
+      <listcell label="Jumlah" />
+      <listcell label="5" />
+    </listgroupfoot>
+  </listbox>
+</window>
+</zk>
+
+<!-- Tambahan materi : -->
+<!-- menupopup component, costumize it -->
+<!-- mold property: default and select -->

@@ -1,0 +1,87 @@
+<?page title="Tree" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Tree" border="normal">
+  <tree id="Pohon" rows="5">
+    <treecols sizable="true">
+      <treecol label="Nama" />
+      <treecol label="Keterangan" />
+    </treecols>
+    <treechildren>
+      <treeitem>
+        <treerow>
+          <treecell label="Buah" />
+          <treecell label="Nama Buah-buahan" />
+        </treerow>
+        <treechildren>
+          <treeitem>
+            <treerow>
+              <treecell label="Semangka" />
+              <treecell label="Buah yang manis dan banyak mengandung air" />
+            </treerow>
+            <treechildren>
+              <treeitem>
+                <treerow>
+                  <treecell label="Semangka Merah" />
+                  <treecell label="Warna dagingnya merah" />
+                </treerow>
+              </treeitem>
+              <treeitem>
+                <treerow>
+                  <treecell label="Semangka Kuning" />
+                  <treecell label="Warna dagingnya kuning" />
+                </treerow>
+              </treeitem>
+              <treeitem>
+                <treerow>
+                  <treecell label="Semangka tanpa biji" />
+                  <treecell label="Dagingnya tanpa biji" />
+                </treerow>
+              </treeitem>
+            </treechildren>
+          </treeitem>
+          <treeitem>
+            <treerow>
+              <treecell label="Apel" />
+              <treecell label="Apel buah yang manis dan mengandung antioksidan" />
+            </treerow>
+            <treechildren>
+              <treeitem>
+                <treerow>
+                  <treecell label="Apel Malang" />
+                  <treecell label="Warna kulit hijau, dan rasanya kecut segar" />
+                </treerow>
+              </treeitem>
+              <treeitem>
+                <treerow>
+                  <treecell label="Apel Import" />
+                  <treecell label="Warna kulit merah, rasanya manis" />
+                </treerow>
+              </treeitem>
+            </treechildren>
+          </treeitem>
+        </treechildren>
+      </treeitem>
+      <treeitem>
+        <treerow>
+          <treecell label="Hewan" />
+          <treecell label="" />
+        </treerow>
+        <treechildren>
+          <treeitem>
+            <treerow>
+              <treecell label="Jerapah" />
+              <treecell label="Berleher panjang, tinggi" />
+            </treerow>
+          </treeitem>
+          <treeitem>
+            <treerow>
+              <treecell label="Gajah" />
+              <treecell label="Berbadan gemuk besar, berbelalai" />
+            </treerow>
+          </treeitem>
+        </treechildren>
+      </treeitem>
+    </treechildren>
+  </tree>
+</window>
+</zk>

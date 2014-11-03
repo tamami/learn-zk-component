@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Created by ZK Studio
+-->
+
+<zk>
+	<device-config>
+		<device-type>ajax</device-type>
+		<timeout-uri>/timeout.zul</timeout-uri><!-- An empty URL can cause the browser to reload the same URL -->
+	</device-config>
+	
+	<library-property>
+	  <name>org.zkoss.zul.Button.mold</name>
+	  <value>trendy</value>
+	</library-property>
+	
+	<language-addon>
+	  <!-- membuat seluruh <button> autodisable begitu diklik dan otomatis 
+	       meng-enable saat request selesai mendapat respon dari server -->
+	  <component>
+	    <component-name>button</component-name>
+	    <extends>button</extends>
+	    <property>
+	      <property-name>autodisable</property-name>
+	      <property-value>self</property-value>
+	    </property>
+	  </component>
+	  
+	  <!-- membuat seluruh <menuitem> autodisable begitu diklik dan otomatis
+	       meng-enable saat request selesai mendapat respon dari server -->
+	  <component>
+	    <component-name>menuitem</component-name>
+	    <extends>menuitem</extends>
+	    <property>
+	      <property-name>autodisable</property-name>
+	      <property-value>self</property-value>
+	    </property>
+	  </component>
+	</language-addon>
+</zk>

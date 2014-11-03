@@ -1,0 +1,17 @@
+<?page title="Tabbox" contentType="text/html;charset=UTF-8"?>
+<zk>
+<tabbox>
+  <tabs>
+    <tab label="Tab 1">Isi tab 1</tab>
+    <tab label="Tab 2">Isi tab 2</tab>
+  </tabs>
+  <tabpanels>
+    <tabpanel>Isi tab 1</tabpanel>
+    <tabpanel>Isi tab 2</tabpanel>
+  </tabpanels>
+</tabbox>
+</zk>
+
+<!-- Tambahan materi -->
+<!-- mold property untuk tabbox: default, accordion, accordion-lite -->
+<!-- closable property untuk tab: false, true -->

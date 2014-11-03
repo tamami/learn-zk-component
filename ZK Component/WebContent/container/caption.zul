@@ -1,0 +1,10 @@
+<?page title="Caption" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Caption" border="normal">
+  <caption image="/images/caption.png" label="Judul">
+    <custom-attributes org.zkoss.zul.image.preload="true" />  
+  </caption>
+</window>
+</zk>
+
+<!-- bisa juga digunakan di groupbox, berikan contoh -->

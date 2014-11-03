@@ -1,0 +1,16 @@
+<?page title="Group Box" contentType="text/html;charset=UTF-8"?>
+<zk>
+<groupbox>
+  <caption label="Pilihannya" />
+  <radiogroup>
+    <radio label="A" />
+    <radio label="B" />
+    <radio label="C" />
+  </radiogroup>
+</groupbox>
+</zk>
+
+<!-- Tambahan materi -->
+<!-- 1. css -->
+<!-- 2. closeable property (closeable="true") -->
+<!-- 3. open property (open="false") -->

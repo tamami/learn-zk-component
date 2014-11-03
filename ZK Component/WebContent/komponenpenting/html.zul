@@ -1,0 +1,10 @@
+<?page title="HTML" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="HTML" border="normal">
+<html><![CDATA[
+  <h1>Contoh HTML</h1>
+  <p>Ini isinya, pake HTML lho.. </p>
+]]>
+</html>
+</window>
+</zk>

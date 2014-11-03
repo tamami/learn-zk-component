@@ -1,0 +1,335 @@
+<?page title="Chart" contentType="text/html;charset=UTF-8"?>
+<zk>
+<vbox>
+<chart id="dia1" title="Diagram Pie" width="500" height="250"
+    type="pie" threeD="true" fgAlpha="128">
+  <attribute name="onClick">
+  <![CDATA[
+    Area area = event.getAreaComponent();
+    if(area != null)
+    	alert(""+area.getAttribute("entity") + ":" + area.getTooltiptext());
+  ]]>
+  </attribute>
+  <zscript>
+  <![CDATA[
+    PieModel model = new SimplePieModel();
+    model.setValue("Jambu", new Double(21.2));
+    model.setValue("Strawberry", new Double(10.2));
+    model.setValue("Jeruk", new Double(40.4));
+    model.setValue("Pepaya", new Double(28.2));
+    dia1.setModel(model);
+  ]]>
+  </zscript>
+</chart>
+
+<chart id="dia2" title="Diagram Cincin" width="500" height="250"
+    type="ring" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    PieModel pieModel = new SimplePieModel();
+    pieModel.setValue("Apel", new Double(12.5));
+    pieModel.setValue("Mangga", new Double(50.2));
+    pieModel.setValue("Duren", new Double(20.5));
+    pieModel.setValue("Manggis", new Double(15.5));
+    dia2.setModel(pieModel);
+  ]]>
+  </zscript>
+</chart>
+
+<chart id="dia3" title="Diagram Batang" width="500" height="250"
+    type="bar" threeD="true" fgAlpha="128">
+  <zscript><![CDATA[
+    CategoryModel catModel1 = new SimpleCategoryModel();
+    catModel1.setValue("Apel", "Januari", new Integer(20));
+    catModel1.setValue("Apel", "Februari", new Integer(30));
+    catModel1.setValue("Apel", "Maret", new Integer(80));
+    catModel1.setValue("Mangga", "Januari", new Integer(30));
+    catModel1.setValue("Mangga", "Februari", new Integer(50));
+    catModel1.setValue("Mangga", "Maret", new Integer(20));
+    dia3.setModel(catModel1);
+  ]]>
+  </zscript>
+</chart>
+
+<chart id="dia4" title="Diagram bertumpuk" width="500" height="250"
+    type="stacked_bar" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    CategoryModel catModel2 = new SimpleCategoryModel();
+    catModel2.setValue("Duren", "Oktober", new Integer(80));
+    catModel2.setValue("Duren", "November", new Integer(20));
+    catModel2.setValue("Duren", "Desember", new Integer(50));
+    catModel2.setValue("Pisang", "Oktober", new Integer(70));
+    catModel2.setValue("Pisang", "November", new Integer(70));
+    catModel2.setValue("Pisang", "Desember", new Integer(80));
+    dia4.setModel(catModel2);
+  ]]>
+  </zscript>
+</chart>
+
+<chart id="dia5" title="Diagram Garis" width="500" height="250"
+    type="line" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+CategoryModel catModel3 = new SimpleCategoryModel();
+catModel3.setValue("Duren", "Oktober", new Integer(80));
+catModel3.setValue("Duren", "November", new Integer(20));
+catModel3.setValue("Duren", "Desember", new Integer(50));
+catModel3.setValue("Pisang", "Oktober", new Integer(70));
+catModel3.setValue("Pisang", "November", new Integer(70));
+catModel3.setValue("Pisang", "Desember", new Integer(80));
+dia5.setModel(catModel3);
+  ]]>
+  </zscript>
+</chart>
+
+<chart id="dia6" title="Diagram Area" width="500" height="250"
+    type="area" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+CategoryModel catModel4 = new SimpleCategoryModel();
+catModel4.setValue("Duren", "Oktober", new Integer(80));
+catModel4.setValue("Duren", "November", new Integer(20));
+catModel4.setValue("Duren", "Desember", new Integer(50));
+catModel4.setValue("Pisang", "Oktober", new Integer(70));
+catModel4.setValue("Pisang", "November", new Integer(70));
+catModel4.setValue("Pisang", "Desember", new Integer(80));
+dia6.setModel(catModel4);
+  ]]>
+  </zscript>
+</chart>
+
+<chart id="dia7" title="Diagram Area Bertumpuk" width="500" height="250"
+    type="stacked_area" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    CategoryModel catModel5 = new SimpleCategoryModel();
+    catModel5.setValue("Duren", "Oktober", new Integer(80));
+    catModel5.setValue("Duren", "November", new Integer(20));
+    catModel5.setValue("Duren", "Desember", new Integer(50));
+    catModel5.setValue("Pisang", "Oktober", new Integer(70));
+    catModel5.setValue("Pisang", "November", new Integer(70));
+    catModel5.setValue("Pisang", "Desember", new Integer(80));
+    dia7.setModel(catModel5);
+  ]]>
+  </zscript>
+</chart>
+
+<chart id="dia8" title="Diagram Waterfall" width="500" height="250"
+    type="waterfall" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    CategoryModel catModel6 = new SimpleCategoryModel();
+    catModel6.setValue("Duren", "Oktober", new Integer(80));
+    catModel6.setValue("Duren", "November", new Integer(20));
+    catModel6.setValue("Duren", "Desember", new Integer(50));
+    catModel6.setValue("Pisang", "Oktober", new Integer(70));
+    catModel6.setValue("Pisang", "November", new Integer(70));
+    catModel6.setValue("Pisang", "Desember", new Integer(80));
+    dia8.setModel(catModel6);
+  ]]>
+  </zscript>
+</chart>
+
+<chart id="dia9" title="Diagram Polar" width="500" height="250"
+    type="polar" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    XYModel xymodel = new SimpleXYModel();
+    xymodel.addValue("Manggis", new Integer(20), new Integer(120));
+    xymodel.addValue("Manggis", new Integer(150), new Integer(100));
+    xymodel.addValue("Manggis", new Integer(225), new Integer(50));
+    xymodel.addValue("Manggis", new Integer(275), new Integer(200));
+    xymodel.addValue("Alpukat", new Integer(45), new Integer(50));
+    xymodel.addValue("Alpukat", new Integer(100), new Integer(100));
+    xymodel.addValue("Alpukat", new Integer(170), new Integer(75));
+    xymodel.addValue("Alpukat", new Integer(190), new Integer(80));
+    dia9.setModel(xymodel);
+  ]]>
+  </zscript>
+</chart>
+
+<chart id="dia10" title="Diagram Scatter" width="500" height="250"
+    type="scatter" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    dia10.setModel(xymodel);
+  ]]>
+  </zscript>
+</chart>
+
+<chart id="dia11" title="Diagram Seri Waktu" width="500" height="250"
+    type="time_series" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    dia11.setModel(xymodel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia12" title="Diagram Area XY" width="500" height="250"
+    type="area" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    dia12.setModel(xymodel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia13" title="Diagram Garis XY" width="500" height="250"
+    type="line" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    dia13.setModel(xymodel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia14" title="Diagram Step Area XY" width="500" height="250"
+    type="step_area" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    dia14.setModel(xymodel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia15" title="Diagram Step XY" width="500" height="250"
+    type="step" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    dia15.setModel(xymodel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia16" title="Diagram Stack Area XY" width="500" height="250"
+    type="stacked_area" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    dia16.setModel(xymodel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia17" title="Diagram Batang XY" width="500" height="250"
+    type="bar" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    dia17.setModel(xymodel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia18" title="Diagram Histogram XY" width="500" height="250"
+    type="histogram" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    dia18.setModel(xymodel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia19" title="Diagram Candlestick" width="500" height="250"
+    type="candlestick" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    HiLoModel hilomodel = new SimpleHiLoModel();
+    long waktu = System.currentTimeMillis();
+    // addValue(tanggal, open, high, low, close, ...)
+    hilomodel.addValue(new Date(waktu), new Double(20.5), new Double(45), 
+    		new Double(15), new Double(34), new Double(10));
+    hilomodel.addValue(new Date(waktu+5000), new Double(40), new Double(80),
+    		new Double(35), new Double(35), new Double(25));
+    hilomodel.addValue(new Date(waktu+10000), new Double(30), new Double(100), 
+    		new Double(20), new Double(80), new Double(45));
+    hilomodel.addValue(new Date(waktu+15000), new Double(80), new Double(100),
+    		new Double(20), new Double(40), new Double(70));
+    hilomodel.addValue(new Date(waktu+20000), new Double(50), new Double(75), 
+    		new Double(10), new Double(20), new Double(34));
+    dia19.setModel(hilomodel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia20" title="Diagram High Low" width="500" height="250"
+    type="highlow" threeD="false" fgAlpha="128" dateFormat="dd/MM/yyyy">
+  <zscript><![CDATA[
+    dia20.setModel(hilomodel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia21" title="Diagram Gelembung XYZ" width="500" height="250"
+    type="bubble" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    XYZModel xyzModel = new SimpleXYZModel();
+    xyzModel.addValue("Apel", new Integer(15), new Integer(100), new Integer(10));
+    xyzModel.addValue("Apel", new Integer(55), new Integer(150), new Integer(15));
+    xyzModel.addValue("Apel", new Integer(35), new Integer(120), new Integer(10));
+    xyzModel.addValue("Pisang", new Integer(28), new Integer(200), new Integer(10));
+    xyzModel.addValue("Pisang", new Integer(32), new Integer(150), new Integer(25));
+    xyzModel.addValue("Pisang", new Integer(50), new Integer(125), new Integer(5));
+    dia21.setModel(xyzModel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia22" title="Diagram Gelembung Horizontal XYZ" width="500" height="250"
+    type="bubble" threeD="false" fgAlpha="128" orient="horizontal">
+  <zscript><![CDATA[
+    dia22.setModel(xyzModel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia23" title="Diagram Gantt" width="500" height="250"
+    type="gantt" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    import org.zkoss.zul.GanttModel.GanttTask;
+    
+    public Date date(int year, int month, int day) {
+    	final java.util.Calendar cal = java.util.Calendar.getInstance();
+    	cal.set(year, month - 1, day);
+    	final Date result = cal.getTime();
+    	return result;
+    }
+    
+    // GanttTask(deskripsi, tgl_awal, tgl_akhir, persentase proses)
+    GanttModel ganttModel = new GanttModel();
+    ganttModel.addValue("Jadwal", new GanttTask("Pengumpulan Bahan", 
+    		date(2014, 1, 1), date(2014, 1, 30), 1.0));
+    ganttModel.addValue("Jadwal", new GanttTask("Desain", 
+    		date(2014, 2, 1), date(2014, 2, 20), 1.0));
+    ganttModel.addValue("Jadwal", new GanttTask("Pembangunan", 
+    		date(2014, 2, 21), date(2014, 5, 30), 1.0));
+    ganttModel.addValue("Jadwal", new GanttTask("Uji Coba", 
+    		date(2014, 6, 1), date(2014, 6, 20), 1.0));
+    ganttModel.addValue("Realisasi", new GanttTask("Pengumpulan Bahan", 
+    		date(2014, 1, 1), date(2014, 1, 20), 1.0));
+    ganttModel.addValue("Realisasi", new GanttTask("Desain", 
+    		date(2014, 1, 21), date(2014, 2, 28), 1.0));
+    ganttModel.addValue("Realisasi", new GanttTask("Pembangunan", 
+    		date(2014, 3, 4), date(2014, 6, 20), 0.8));
+    ganttModel.addValue("Realisasi", new GanttTask("Uji Coba", 
+    		date(2014, 6, 21), date(2014, 6, 23), 0.0));
+    
+    dia23.setModel(ganttModel);
+  ]]></zscript>
+</chart>
+
+<chart id="dia24" title="Diagram Angin" width="500" height="250"
+    type="wind" threeD="false" fgAlpha="128" dateFormat="dd/MM/yyyy">
+  <zscript><![CDATA[
+    public Date date(int year, int month, int day) {
+    	final java.util.Calendar calendar = java.util.Calendar.getInstance();
+    	calendar.set(year, month-1, day);
+    	final Date result = calendar.getTime();
+    	return result;
+    }
+    
+    XYZModel modelWind = new SimpleXYZModel();
+    // addValue(keterangan, tanggal, titik x, titik y)
+    modelWind.addValue("Arah Angin", new Long(date(2014, 1, 1).getTime()), 
+    		new Double(0.0), new Double(5.0));
+    modelWind.addValue("Arah Angin", new Long(date(2014, 1, 2).getTime()),
+    		new Double(2.5), new Double(8.0));
+    modelWind.addValue("Arah Angin", new Long(date(2014, 1, 3).getTime()),
+    		new Double(4.8), new Double(12.0));
+    modelWind.addValue("Arah Angin", new Long(date(2014, 1, 4).getTime()), 
+    		new Double(7.5), new Double(7.0));
+    dia24.setModel(modelWind);
+  ]]></zscript>
+</chart>
+
+<chart id="dia25" title="Diagram Dial" width="500" height="250"
+    type="dial" threeD="false" fgAlpha="128">
+  <zscript><![CDATA[
+    import org.zkoss.zul.DialModel;
+    import org.zkoss.zul.DialModelScale;
+    int val=50;
+    		
+    DialModel dial = new DialModel();
+    DialModelScale scale = dial.newScale(0.0, 100.0, -120.0, -300.0, 10.0, 4);
+    scale.setText("Speed");
+    scale.newRange(80, 100, "#FF0000", 0.94, 0.89);
+    scale.newRange(60, 80, "#FFC426", 0.83, 0.89);
+    scale.setNeedleColor(dial.getFrameFgColor());
+    scale.setValue(val);
+    dia25.setModel(dial);
+  ]]>
+  </zscript>
+</chart>
+</vbox>
+</zk>

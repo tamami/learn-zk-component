@@ -1,0 +1,5 @@
+<?page title="Span" contentType="text/html;charset=UTF-8"?>
+<zk>
+<label value="Ini kalimat awal" /> 
+<span>Ini isi dalam span</span>
+</zk>

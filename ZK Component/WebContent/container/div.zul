@@ -1,0 +1,12 @@
+<?page title="Div" contentType="text/html;charset=UTF-8"?>
+<zk>
+<div align="left">
+  <bandbox />
+</div>
+<div align="center">
+  <bandbox />
+</div>
+<div align="right">
+  <bandbox />
+</div>
+</zk>

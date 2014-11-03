@@ -1,0 +1,16 @@
+<?page title="Separator" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Separator" border="normal">
+apel
+<separator />
+mangga
+<space bar="true" />
+<separator spacing="10px"/>
+pisang
+<space bar="true" spacing="10px" />
+jambu
+</window>
+</zk>
+
+<!-- materi tambahan -->
+<!-- sebetulnya <space> itu sama dengan <separator orient="horizontal"> -->

@@ -1,0 +1,13 @@
+<?page title="Flashchart" contentType="text/html;charset=UTF-8"?>
+<zk>
+<flashchart id="fc" width="500" height="250" type="pie">
+  <zscript><![CDATA[
+    PieModel model = new SimplePieModel();
+    model.setValue("Pepaya", new Double(56));
+    model.setValue("Mangga", new Double(20));
+    model.setValue("Pisang", new Double(80));
+    model.setValue("Jambu", new Double(65));
+    fc.setModel(model);
+  ]]></zscript>
+</flashchart>
+</zk>

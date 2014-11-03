@@ -1,0 +1,6 @@
+<?page title="Image" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Image" border="normal">
+  <image src="/images/button_checked.mdpi.png" />
+</window>
+</zk>

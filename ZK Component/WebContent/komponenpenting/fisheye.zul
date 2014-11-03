@@ -1,0 +1,12 @@
+<?page title="Fish Eye" contentType="text/html;charset=UTF-8"?>
+<zk>
+<div height="450px">
+  <fisheyebar id="fsb" style="position:absolute; margin:80px 150px;">
+    <fisheye image="/images/att_of_logo.png" />
+    <fisheye image="/images/button_checked.mdpi.png" />
+    <fisheye image="/images/icon.friend.mdpi.png" />
+  </fisheyebar>
+</div>
+</zk>
+
+<!-- perhatikan bahwa komponen fisheye hanya ada di PE dan EE -->

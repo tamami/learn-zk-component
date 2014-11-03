@@ -1,0 +1,40 @@
+<?page title="GMaps" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="GMaps v2" border="normal">
+  <script type="text/javascript" content="zk.googleAPIkey='G-API-KEY'" />
+  
+  <gmaps id="monas" width="500px" height="300px" showSmallCtrl="true">
+    <ginfo id="infonya" open="true">
+      <![CDATA[INI MONAS]]>
+    </ginfo>
+    
+    <gmarker id="tandanya" lat="37.4410" lng="-122.1490">
+      <![CDATA[INI TANDANYA]]>
+    </gmarker>
+    
+    <attribute name="onMapClick">
+      Gmarker gmarker = event.getMarker();
+      if(gmarker != null) {
+        gmarker.setOpen(true);
+      }
+    </attribute>
+  </gmaps>
+</window>
+
+<window title="GMaps v3" border="normal">
+  <gmaps id="mapv3" width="500px" height="300px" showSmallCtrl="true">
+    <ginfo id="infov3" open="true">
+      <![CDATA[INI INFONYA]]>
+    </ginfo>
+    <gmarker id="tandav3" lat="37.4410" lng="-122.1490">
+      <![CDATA[INI TANDANYA]]>
+    </gmarker>
+    <attribute name="onMapClick">
+      Gmarker gmarker = event.getGmarker();
+      if(gmarker != null) {
+        gmarker.setOpen(true);
+      }
+    </attribute>
+  </gmaps>
+</window>
+</zk>

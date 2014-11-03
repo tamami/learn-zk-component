@@ -1,0 +1,42 @@
+<?page title="Combo Button" contentType="text/html;charset=UTF-8"?>
+<zk>
+<combobutton label="Buah">
+  <popup>
+    <vbox>
+      <hbox>
+        cari : <textbox />
+      </hbox>
+      <listbox width="350px">
+        <listhead>
+          <listheader label="Nama" />
+          <listheader label="Keterangan" />
+        </listhead>
+        <listitem>
+          <listcell label="Apel" />
+          <listcell label="Anti oksidan tinggi" />
+        </listitem>
+        <listitem>
+          <listcell label="Duren" />
+          <listcell label="Buah lembut dengan bau menyengat" />
+        </listitem>
+      </listbox>
+    </vbox>
+  </popup>
+</combobutton>
+<combobutton label="Seperti Menu Popup">
+  <menupopup>
+    <menuitem label="Hewan" />
+    <menu label="Buah">
+      <menupopup>
+        <menu label="Apel">
+          <menupopup>
+            <menuitem label="Apel Malang" />
+            <menuitem label="Apel Import" />
+          </menupopup>
+        </menu>
+        <menuitem label="Kiwi" />
+      </menupopup>
+    </menu>
+  </menupopup>
+</combobutton>
+</zk>

@@ -1,0 +1,29 @@
+<?page title="Menu" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Menu" border="normal">
+  <menubar>
+    <menu label="Konfigurasi">
+      <menupopup>
+        <menuitem label="Pilihan 1" onClick="alert(self.label)"/>
+        <menuitem label="Pilihan 2" onClick="alert(self.label)" />
+        <menuitem label="Pilihan 3" onClick="alert(self.label)" />
+        <menuseparator/>
+        <menuitem label="Pilihan 4" onClick="alert(self.label)" />
+      </menupopup>
+    </menu>
+  </menubar>
+</window>
+</zk>
+
+<!-- materi tambahan -->
+<!-- 1. scrollable="true" di <menubar> -->
+<!-- 2. autodisable="self", atau autodisable="{id}", atau autodisable="{+id}" 
+        di <menuitem>, cek juga di zk.xml, ada konfigurasi untuk mengatur
+        seluruh <menuitem> agar autodisable -->
+<!-- 3. upload="true" dan onUpload="handle(event.media)" di <menuitem> 
+        -->
+<!-- 4. href="/url" di <menuitem>, lihat juga alternatif menggunakan
+        onClick="Executions.sendRedirect(&quot;another.zul&quot;)" agar
+        proses peralihan ke halaman yang lain di lakukan di server daripada
+        menggunakan href yang peralihan ke halaman lain dilakukan di client
+        secara langsung -->

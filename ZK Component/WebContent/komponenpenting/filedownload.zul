@@ -1,0 +1,13 @@
+<?page title="File Download" contentType="text/html;charset=UTF-8"?>
+<zk>
+<button label="Unduh">
+  <attribute name="onClick"> {
+    java.io.InputStream is = desktop.getWebApp().getResourceAsStream("/images/caption.png");
+    if(is != null)
+      Filedownload.save(is, "png", "caption.png");
+    else
+      alert("/images/caption.png tidak ada");
+  }
+  </attribute>
+</button>
+</zk>

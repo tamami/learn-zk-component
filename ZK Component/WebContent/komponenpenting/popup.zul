@@ -1,0 +1,14 @@
+<?page title="Popup" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Popup" border="normal" tooltip="info">
+Jendela ini memiliki popup, coba saja klik di judul jendela.
+<textbox popup="info, position=end_after, delay=2000"
+    value="Textbox ini juga punya popup" />
+</window>
+<popup id="info" width="300px">
+  <vbox>
+    Betul kan, dibilangin ga percaya siy..." 
+    <toolbarbutton label="Ok, saya percaya" />
+  </vbox>
+</popup>
+</zk>

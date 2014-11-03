@@ -1,0 +1,6 @@
+<?page title="IFrame" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="IFrame" border="normal">
+<iframe src="/komponenpenting/fisheye.zul" />
+</window>
+</zk>

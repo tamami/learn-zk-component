@@ -1,0 +1,32 @@
+<?page title="CardLayout" contentType="text/html;charset=UTF-8"?>
+<zk>
+<cardlayout id="card" width="300px" height="200px" selectedIndex="0">
+  <window title="Jendela" border="normal" width="175px">
+    Ini isinya window
+  </window>
+  <listbox>
+    <listhead sizable="true">
+      <listheader label="Nomor" />
+      <listheader label="Buah" />
+    </listhead>
+    <listitem>
+      <listcell label="1" />
+      <listcell label="Pepaya" />
+    </listitem>
+    <listitem>
+      <listcell label="2" />
+      <listcell label="Mangga" />
+    </listitem>
+    <listitem>
+      <listcell label="3" />
+      <listcell label="Pisang" />
+    </listitem>
+  </listbox>
+</cardlayout>
+<hlayout>
+  <button onClick="card.previous()">sebelumnya</button>
+  <button onClick="card.next()">setelahnya</button>
+  <button onClick='card.setOrient("horizontal".equals(card.getOrient()) ? "vertical" : 
+      "horizontal")'>Ganti Orientasi</button>
+</hlayout>
+</zk>

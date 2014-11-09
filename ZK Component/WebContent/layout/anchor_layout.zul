@@ -1,0 +1,17 @@
+<?page title="AnchorLayout" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="AnchorLayout" border="normal" width="100%" height="100%">
+  <anchorlayout id="ancLayout" width="100%">
+    <anchorchildren height="100px" anchor="-50">
+      <window title="jendela1" border="normal" width="100%" height="100%">
+        tinggi sesuai anchorchildren, lebar sesuai parent - 50
+      </window>
+    </anchorchildren>
+    <anchorchildren anchor="40% -100">
+      <window title="jendela2" border="normal" width="100%" height="100%">
+        lebar 40% dari parent, tinggi sama dengan parent - 100
+      </window>
+    </anchorchildren>
+  </anchorlayout>
+</window>
+</zk>

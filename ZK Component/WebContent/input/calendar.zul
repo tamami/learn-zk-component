@@ -1,0 +1,8 @@
+<?page title="Calendar" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Calendar" border="normal">
+  <calendar id="cal1" onChange="in.value = cal1.value" />
+  <datebox id="db" onChange="cal1.value = db.value" 
+      format="dd-MM-yyyy"/>
+</window>
+</zk>

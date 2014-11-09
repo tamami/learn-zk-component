@@ -1,0 +1,18 @@
+<?page title="Combobox" contentType="text/html;charset=UTF-8"?>
+<zk>
+<zscript><![CDATA[
+  ListModelList model = new ListModelList(Arrays.asList(new String[] {"Jeruk", 
+		  "Lemon", "Melon", "Strawberry"}));
+  
+]]></zscript>
+<window title="Combobox" border="normal">
+  <combobox>
+    <comboitem label="Pepaya" />
+    <comboitem label="Mangga" />
+    <comboitem label="Pisang" />
+    <comboitem label="Jambu" />
+  </combobox>
+  <combobox model="${model }" onAfterRender="self.setSelectedIndex(2)" />
+</window>
+
+</zk>

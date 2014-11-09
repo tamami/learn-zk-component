@@ -1,0 +1,13 @@
+<?page title="Box" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Box" border="normal">
+  <box orient="vertical">
+    <label value="vertikal 1" />
+    <label value="vertikal 2" />
+  </box>
+  <box orient="horizontal" spacing="5em">
+    <label value="horizontal 1" />
+    <label value="horizontal 2" />
+  </box>
+</window>
+</zk>

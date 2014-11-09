@@ -1,0 +1,11 @@
+<?page title="AbsoluteLayout" contentType="text/html;charset=UTF-8"?>
+<zk>
+<absolutelayout>
+  <absolutechildren id="jendela1" x="50" y="50">
+    <window title="jendela1">Ini isi jendela 1</window>
+  </absolutechildren>
+  <absolutechildren id="jendela2" x="100" y="100">
+    <window title="jendela2">Ini isi jendela 2</window>
+  </absolutechildren>
+</absolutelayout>
+</zk>

@@ -1,0 +1,27 @@
+<?page title="Bandbox" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Bandbox" border="normal">
+  <bandbox id="band" mold="rounded">
+    <bandpopup>
+      <listbox onSelect="band.value=self.selectedItem.label;band.close();">
+        <listhead>
+          <listheader label="Buah" />
+          <listheader label="Ciri-ciri" />
+        </listhead>
+        <listitem>
+          <listcell label="Apel Malang" />
+          <listcell label="Hijau, rasanya asam segar" />
+        </listitem>
+        <listitem>
+          <listcell label="Durian" />
+          <listcell label="Kulitnya berduri, dagingnya lembut" />
+        </listitem>
+        <listitem>
+          <listcell label="Salak Pondoh" />
+          <listcell label="Buahnya kecil dan manis" />
+        </listitem>
+      </listbox>
+    </bandpopup>
+  </bandbox>
+</window>
+</zk>

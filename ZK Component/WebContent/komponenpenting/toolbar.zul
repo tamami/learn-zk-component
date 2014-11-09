@@ -1,0 +1,16 @@
+<?page title="Toolbar" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Toolbar" border="normal">
+  <caption>
+    <toolbarbutton label="Nempel dijendela atas" />
+  </caption>
+  <toolbar>
+    <toolbarbutton label="Toolbar 1" />
+    <toolbarbutton label="Toolbar 2" image="/images/button_checked.mdpi.png" />
+  </toolbar>
+</window>
+</zk>
+
+<!-- materi tambahan : -->
+<!-- 1. <toolbarbutton> bisa digantikan dengan <button> -->
+<!-- 2. property orient="vertical" berarti tampilan ke bawah dari toolbar -->

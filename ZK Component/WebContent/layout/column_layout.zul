@@ -1,0 +1,58 @@
+<?page title="ColumnLayout" contentType="text/html;charset=UTF-8"?>
+<zk>
+<columnlayout>
+  <columnchildren width="30%" style="padding: 10px">
+    <panel height="100px" title="Buah" closable="true"
+        collapsible="true" border="normal" maximizable="true"
+        style="margin-bottom: 10px">
+      <panelchildren>
+        <vlayout>
+          <label value="Pepaya" />
+          <label value="Mangga" />
+          <label value="Pisang" />
+        </vlayout>
+      </panelchildren>
+    </panel>
+    <panel height="100px" title="Hewan" closable="true" framable="true"
+        border="normal" maximizable="true" style="margin-bottom: 10px">
+      <panelchildren>
+        <vlayout>
+          <label value="Singa" />
+          <label value="Gajah" />
+          <label value="Jerapah" />
+        </vlayout>
+      </panelchildren>
+    </panel>
+    <panel height="100px" title="Kue" border="normal" closable="true">
+      <panelchildren>
+        <vlayout>
+          <label value="Lapis legit" />
+          <label value="Donut" />
+          <label value="Brownies" />
+        </vlayout>
+      </panelchildren>
+    </panel>
+  </columnchildren>
+  <columnchildren width="50%" style="padding: 10px">
+    <panel title="Bahasa Pemrograman" maximizable="true" border="normal"
+        style="margin-bottom: 10px">
+      <panelchildren>
+        <vlayout>
+          <label value="C" />
+          <label value="C++" />
+          <label value="Java" />
+        </vlayout>
+      </panelchildren>
+    </panel>
+    <panel title="Hobby" border="normal">
+      <panelchildren>
+        <vlayout>
+          <label value="Olahraga" />
+          <label value="Main Game" />
+          <label value="Membaca" />
+        </vlayout>
+      </panelchildren>
+    </panel>
+  </columnchildren>
+</columnlayout>
+</zk>

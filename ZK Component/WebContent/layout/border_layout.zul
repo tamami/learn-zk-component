@@ -1,0 +1,22 @@
+<?page title="BorderLayout" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="BorderLayout" border="normal" width="100%" height="100%">
+  <borderlayout>
+    <north title="Utara" size="50%" splittable="true" collapsible="true">
+      <label value="Blok Utara" />
+    </north>
+    <west title="Barat" size="25%" splittable="false" collapsible="true">
+      <label value="Blok Barat" />
+    </west>
+    <center title="Tengah" border="0">
+      <label value="Blok Tengah" />
+    </center>
+    <east title="Timur" size="10%" splittable="true" collapsible="false">
+      <label value="Blok Timur" />
+    </east>
+    <south title="Selatan" size="10%" splittable="false" collapsible="false">
+      <label value="Blok Selatan" />
+    </south>
+  </borderlayout>
+</window>
+</zk>

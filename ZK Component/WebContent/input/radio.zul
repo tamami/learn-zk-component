@@ -1,0 +1,30 @@
+<?page title="Radio" contentType="text/html;charset=UTF-8"?>
+<zk>
+<zscript><![CDATA[
+  String[] data = new String[3];
+  for(int i=0; i < data.length; ++i) {
+	  data[i] = "Radio " + i;
+  }
+  ListModel model = new SimpleListModel(data);
+]]>
+</zscript>
+<window title="Radio" border="normal">
+<vbox>
+  <radiogroup model="${model}" id="generated" onCheck="pilihan1.value = self.selectedItem.label"/>
+  <radiogroup id="buah" onCheck="pilihan2.value = self.selectedItem.label"/>
+<hbox>
+  <radio label="Pepaya" radiogroup="buah" />
+  <radio label="Mangga" radiogroup="buah" />
+  <radio label="Pisang" radiogroup="buah" />
+  <radio label="Jambu" radiogroup="buah" />
+</hbox>
+<grid>
+  <columns><column /><column /></columns>
+  <rows>
+    <row>Isi pilihan generated : <label id="pilihan1" /></row>
+    <row>Isi pilihan buah : <label id="pilihan2" /></row>
+  </rows>
+</grid>
+</vbox>
+</window>
+</zk>

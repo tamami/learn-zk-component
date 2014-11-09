@@ -1,0 +1,10 @@
+<?page title="Decimalbox" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Decimalbox" border="normal">
+  <decimalbox format="#,##0.##" />
+  <doublebox format="#,##0.00" />
+  <doublespinner step="0.1" />
+  <intbox format="#,##0" />
+  <longbox format="#,##0" width="500px"/>
+</window>
+</zk>

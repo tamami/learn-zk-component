@@ -1,0 +1,6 @@
+<?page title="Slider" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Slider" border="normal">
+  <slider id="slideme" orient="vertical" curpos="5" maxpos="50" pageIncrement="5" />
+</window>
+</zk>

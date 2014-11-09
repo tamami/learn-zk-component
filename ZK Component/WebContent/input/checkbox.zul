@@ -1,0 +1,24 @@
+<?page title="Checkbox" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Checkbox" border="normal">
+  <vbox>
+    Silahkan pilih :
+    <hbox>
+      <checkbox id="pepaya" label="Pepaya" onCheck="doChecked()" />
+      <checkbox id="mangga" label="Mangga" onCheck="doChecked()" />
+      <checkbox id="pisang" label="Pisang" onCheck="doChecked()" />
+    </hbox>
+    <separator />
+    <hbox>
+      Anda suka : <label id="buah" />
+    </hbox>
+  </vbox>  
+  <zscript>
+    void doChecked() {
+      buah.value = (pepaya.isChecked() ? pepaya.label + ' ' : &quot;&quot;) +
+          (mangga.isChecked() ? mangga.label + ' ' : &quot;&quot;) +
+          (pisang.isChecked() ? pisang.label + ' ' : &quot;&quot;);
+    }
+  </zscript>
+</window>
+</zk>
